@@ -20,8 +20,8 @@ library(plotly)
 
 data |> 
   plot_ly(
-    x = _____, 
-    y = _____, 
+    x = ~Species, 
+    y = mean_Sepal.Length, 
     type = "bar"
   )
 
@@ -30,9 +30,9 @@ data |>
 library(echarts4r)
 
 data |> 
-  e_charts(x = _____) |> 
-  e_bar(serie = _____) |> 
-  e_tooltip(trigger = _____)   # tooltip must be specified
+  e_charts(x = Species) |> 
+  e_bar(serie = mean_Sepal.Length) |> 
+  e_tooltip(trigger = "item")   # tooltip must be specified
 
 
 # Conclusion ----
