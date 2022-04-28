@@ -23,9 +23,9 @@ data <- iris |>
 ## Create simple line chart ----
 data |> 
   group_by(Species) |> 
-  e_charts(x = _____) |> 
-  e_line(serie = _____) |> 
-  e_tooltip(trigger = _____)
+  e_charts(x = Date) |> 
+  e_line(serie = Petal.Width) |> 
+  e_tooltip(trigger = "axis")
 
 ## Using Non-native Formatting ----
 ?e_line   # click the "See additional arguments" link
@@ -36,7 +36,7 @@ data |>
   e_charts(x = Date) |> 
   e_line(
     serie = Petal.Width, 
-    symbol = _____   # fill in the circle
+    symbol = "circle"   # fill in the circle
   ) |> 
   e_tooltip(trigger = "axis")
 
@@ -46,6 +46,6 @@ data |>
   e_charts(x = Date) |> 
   e_line(
     serie = Petal.Width, 
-    lineStyle = _____   # `lineStyle = "dashed"` doesn't work
+    lineStyle = list(type = "dashed")   # `lineStyle = "dashed"` doesn't work
   ) |> 
   e_tooltip(trigger = "axis")
