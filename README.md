@@ -39,6 +39,11 @@ directly.
 
 ### The {echarts4r} R package
 
+-   Developed and maintained by [John
+    Coene](https://github.com/JohnCoene)
+-   First stable release hit CRAN in 2018 (v0.0.2)
+-   Most recent version is v0.4.3
+
 ### The Case for {echarts4r}
 
 -   Interactivity that you can’t get from {ggplot2}
@@ -53,7 +58,13 @@ Some of my other favorite things about {echarts4r} include:
 
 -   [sliders for *“zooming”* the x- and/or
     y-axis](https://echarts4r.john-coene.com/articles/brush.html#sliders)
--   
+-   capturing client-side events, allowing you to:
+    -   capture mouseover, click, or brush (selection) events
+        -   [Example](http://shiny.john-coene.com/echarts4rShiny/)
+    -   connect two charts, so that you can filter one chart by
+        interacting with another chart (similar experience to
+        [{crosstalk}](https://rstudio.github.io/crosstalk/))
+        -   [Example](https://echarts4r.john-coene.com/articles/brush.html#brush)
 
 ## Reproducibility
 
