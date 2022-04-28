@@ -53,3 +53,22 @@ Some of my other favorite things about {echarts4r} include:
 
 * [sliders for *"zooming"* the x- and/or y-axis](https://echarts4r.john-coene.com/articles/brush.html#sliders)
 * 
+
+## Reproducibility 
+
+If you would like to reproduce these charts yourself, we recommend taking advantage of the [{renv} package](https://rstudio.github.io/renv/articles/renv.html) to ensure the package versions you are using are consistent with this repository / talk. You can do so by following these steps:
+
+1. Clone this repository to your local machine
+
+2. Open the [echarts4r-intro.Rproj](echarts4r-intro.Rproj) file from the directory on your local machine where you cloned this repository. This should install the {renv} package if you do not already have it installed, but if you don’t see that happen in the console, run `install.packages("renv")`.
+
+3. Run `renv::restore()` to install the [dependencies](renv.lock) needed to run this app successfully
+
+4. Run the scripts in the [examples](examples/) directory
+
+## Session Info
+
+```{r}
+utils::sessionInfo()
+```
+

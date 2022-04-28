@@ -54,3 +54,52 @@ Some of my other favorite things about {echarts4r} include:
 -   [sliders for *“zooming”* the x- and/or
     y-axis](https://echarts4r.john-coene.com/articles/brush.html#sliders)
 -   
+
+## Reproducibility
+
+If you would like to reproduce these charts yourself, we recommend
+taking advantage of the [{renv}
+package](https://rstudio.github.io/renv/articles/renv.html) to ensure
+the package versions you are using are consistent with this repository /
+talk. You can do so by following these steps:
+
+1.  Clone this repository to your local machine
+
+2.  Open the [echarts4r-intro.Rproj](echarts4r-intro.Rproj) file from
+    the directory on your local machine where you cloned this
+    repository. This should install the {renv} package if you do not
+    already have it installed, but if you don’t see that happen in the
+    console, run `install.packages("renv")`.
+
+3.  Run `renv::restore()` to install the [dependencies](renv.lock)
+    needed to run this app successfully
+
+4.  Run the scripts in the [examples](examples/) directory
+
+## Session Info
+
+``` r
+utils::sessionInfo()
+#> R version 4.1.1 (2021-08-10)
+#> Platform: x86_64-w64-mingw32/x64 (64-bit)
+#> Running under: Windows 10 x64 (build 19044)
+#> 
+#> Matrix products: default
+#> 
+#> locale:
+#> [1] LC_COLLATE=English_United States.1252 
+#> [2] LC_CTYPE=English_United States.1252   
+#> [3] LC_MONETARY=English_United States.1252
+#> [4] LC_NUMERIC=C                          
+#> [5] LC_TIME=English_United States.1252    
+#> 
+#> attached base packages:
+#> [1] stats     graphics  grDevices datasets  utils     methods   base     
+#> 
+#> loaded via a namespace (and not attached):
+#>  [1] compiler_4.1.1  magrittr_2.0.3  fastmap_1.1.0   cli_3.3.0      
+#>  [5] htmltools_0.5.2 tools_4.1.1     rstudioapi_0.13 yaml_2.3.5     
+#>  [9] stringi_1.7.6   rmarkdown_2.14  knitr_1.38      stringr_1.4.0  
+#> [13] xfun_0.30       digest_0.6.29   rlang_1.0.2     renv_0.15.2    
+#> [17] evaluate_0.15
+```
